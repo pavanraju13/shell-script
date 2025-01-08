@@ -1,29 +1,30 @@
 #!bin/bash
 
 
-NUMBER=$1
+#!/bin/bash
 
-if [$NUMBER -gt 20]
-then
- echo " print given $NUMBER greater then 20"
+# First number
+NUMBER1=$1
 
- else
- echo "print given $NUMBER less than 20"
+if [ $NUMBER1 -gt 20 ]; then
+  echo "The given number $NUMBER1 is greater than 20"
+else
+  echo "The given number $NUMBER1 is less than or equal to 20"
+fi
 
- fi
+# Second number
+NUMBER2=$2
 
- Number=$2
+if [ $NUMBER2 -lt 20 ]; then
+  echo "The given number $NUMBER2 is less than 20"
+else
+  echo "The given number $NUMBER2 is greater than or equal to 20"
+fi
 
- if [NUMBER -lt 20]
- then
- echo "print given $NUMBER less than 20"
+# Print all variables
+echo "All variables passed: $@"
 
- else
- echo "print given $NUMBER greater then 20"
+# Print the count of variables
+echo "Count of variables passed: $#"
 
- fi
-
- echo "Print all the varaiables : $@"
-
- echo "Print count of variables : $#"
 
