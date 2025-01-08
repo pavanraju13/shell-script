@@ -12,3 +12,7 @@ echo " all varaiables :$@"
 echo "Number of varaiables passed : $#"
 
 echo "script name : $0"
+
+echo "present working directory : $PWD"
+
+echo "Home directory : $HOME"
