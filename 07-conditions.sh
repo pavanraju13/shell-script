@@ -5,10 +5,10 @@ NUMBER=$1
 
 if [NUMBER -gt 20]
 then
- echo " print given number greater then 20"
+ echo " print given $NUMBER greater then 20"
 
  else
- echo "print given number less than 20"
+ echo "print given $NUMBER less than 20"
 
  fi
 
@@ -16,10 +16,10 @@ then
 
  if [NUMBER -lt 20]
  then
- echo "print given number less than 20"
+ echo "print given $NUMBER less than 20"
 
  else
- echo "print given number greater then 20"
+ echo "print given $NUMBER greater then 20"
 
  fi
 
@@ -27,4 +27,3 @@ then
 
  echo "Print count of variables : $#"
 
- 
