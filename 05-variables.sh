@@ -11,10 +11,9 @@ Movies=("Indra" "Wailter veeraya" "Khaidi")
 
 
 
-echo "first movie is : ${movies[0 ]}"
+echo "first movie is : ${movies[0]}"
 
 echo "Second movie is : ${movies[1]}"
 
 echo "List of movies is : ${movies[@]}"
 
-read movies
