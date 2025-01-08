@@ -16,3 +16,10 @@ echo "script name : $0"
 echo "present working directory : $PWD"
 
 echo "Home directory : $HOME"
+
+echo "To know about the current user : $USER"
+
+echo " To know about the hostname : $HOSTNAME"
+
+echo " To know about the process ID of excution of this script : $$"
+
