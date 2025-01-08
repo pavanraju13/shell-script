@@ -7,3 +7,6 @@ then
 echo "Required root permissions"
  exit 1
  fi
+
+
+ dnf install mysql -y
