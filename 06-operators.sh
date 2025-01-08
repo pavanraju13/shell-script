@@ -10,3 +10,5 @@ echo "Sum of $NO1 and $NO2 is : $SUM"
 echo " all varaiables :$@"
 
 echo "Number of varaiables passed : $#"
+
+echo "script name : $0"
