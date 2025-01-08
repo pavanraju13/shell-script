@@ -3,7 +3,7 @@
 
 NUMBER=$1
 
-if [NUMBER -gt 20]
+if [$NUMBER -gt 20]
 then
  echo " print given $NUMBER greater then 20"
 
