@@ -2,7 +2,7 @@
 
 # Prompt for username
 echo  "Please enter the username: "
-read username
+read -s username
 
 # Prompt for password (hidden input)
 echo  "Please enter the password: "
