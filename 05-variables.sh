@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-Movies = ("Indra" "Wailter veeraya" "Khaidi")
+Movies=("Indra" "Wailter veeraya" "Khaidi")
 
 #size of the array is 3
 
