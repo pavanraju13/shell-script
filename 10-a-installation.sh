@@ -21,4 +21,17 @@ exit 1
 
 fi
 
+dnf install apache2 -y
+
+if [ $? -ne 0 ]
+
+then 
+
+echo "Installation of apache ...Failure"
+
+else
+
+echo "Installation of apache .. Success"
+
+fi
  
