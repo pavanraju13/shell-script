@@ -29,6 +29,8 @@ then
 
 echo "Installation of apache ...Failure"
 
+exit 1
+
 else
 
 echo "Installation of apache .. Success"
