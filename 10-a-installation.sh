@@ -21,19 +21,15 @@ exit 1
 
 fi
 
-dnf install apache2 -y
+#!/bin/bash
 
-if [ $? -ne 0 ]
+# Attempt to install Apache
+dnf install httpd -y
 
-then 
-
-echo "Installation of apache ...Failure"
-
-exit 1
-
+# Check the exit status of the last command
+if [ $? -ne 0 ]; then
+  echo "Installation of Apache... Failure"
+  exit 1
 else
-
-echo "Installation of apache .. Success"
-
+  echo "Installation of Apache... Success"
 fi
- 
