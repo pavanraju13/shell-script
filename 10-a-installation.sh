@@ -21,7 +21,7 @@ exit 1
 
 fi
 
-#!/bin/bash
+
 
 # Attempt to install Apache
 dnf install httpd -y
