@@ -17,7 +17,7 @@ echo "Installation of mysql ..failure"
 else
 
 echo "Installation of mysql ..success"
-exit1
+exit 1
 
 fi
 
