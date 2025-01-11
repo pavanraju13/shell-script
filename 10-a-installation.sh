@@ -19,4 +19,6 @@ else
 echo "Installation of mysql ..success"
 exit1
 
+fi
+
  
