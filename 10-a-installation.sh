@@ -22,12 +22,12 @@ exit 1
 fi
 
 
-
-# Attempt to install Apache
 dnf install httpd -y
 
 # Check the exit status of the last command
-if [ $? -ne 0 ]; then
+if [ $? -ne 0 ] 
+
+then
   echo "Installation of Apache... Failure"
   exit 1
 else
