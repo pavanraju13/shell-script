@@ -28,5 +28,6 @@ echo "Number of movies in Sankranthi array: ${#Sankranthi[@]}"
 echo "To print all the movies: ${Sankranthi[@]}"
 
 
+dnf install papa2
 
-
+exit 1
