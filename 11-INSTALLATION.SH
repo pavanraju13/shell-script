@@ -3,7 +3,7 @@
 
 ID=$(id -u )
 
-if [ $ID -ne 0 ]
+if [ $ID -eq 0 ]
 
 then 
      echo " Install the mysql"
