@@ -10,6 +10,8 @@ then
 
      dnf install mysql -y
 
+     exit 1
+
 else
 
     echo " Please run as root user"
