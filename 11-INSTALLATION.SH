@@ -25,7 +25,7 @@ echo "Second movie above average: ${Sankranthi[1]}"
 echo "Third movie Hit: ${Sankranthi[2]}"
 
 echo "Total variables: $#"
-echo "Count of variables: ${#Sankranthi[@]}"
+echo "Count of variables: $@"
 
 
 
