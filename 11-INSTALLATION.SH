@@ -18,7 +18,7 @@ else
 
 fi
 
-Sankrathi= ${ GAME CHANGER , Daaku Maharaj , Sankrathiki vastunam }
+Sankranthi= ${ GAME CHANGER , Daaku Maharaj , Sankranthiki vastunam }
 
 echo " first movie average : { $Sankranthi[0] } "
 
