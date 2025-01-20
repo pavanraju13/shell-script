@@ -18,3 +18,17 @@ else
 
 fi
 
+Sankrathi= ${ GAME CHANGER , Daaku Maharaj , Sankrathiki vastunam }
+
+echo " first movie average : { $Sankranthi[0] } "
+
+echo " Second movie above average: { $Sankranthi[1] } "
+
+echo " Third  movie Hit : { $Sankranthi[3] } "
+
+echo " Total variables : $@"
+
+echo " Count of varaiables : $#"
+
+
+
