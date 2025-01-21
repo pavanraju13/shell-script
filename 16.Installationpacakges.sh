@@ -41,6 +41,8 @@ do
 echo "package install : $i"
 dnf list installed $i | tee -a "$LOG_FILE"
 
+done
+
 if [ $? -eq 0 ]
 
 then 
@@ -50,7 +52,7 @@ echo " $i installed package ..skipping"
 else
 
 echo " $i Not Installed ..installation started"
-done
+
 fi
 
 dnf install $i 
