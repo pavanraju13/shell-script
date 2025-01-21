@@ -8,7 +8,7 @@ LOG_FILE="/tmp/${SCRIPT_NAME}-${TIME_STAMP}.log" # Define the log file path
 # Function to validate command execution
 VALIDATE() {
     if [ $1 -eq 0 ]; then
-        echo "$2 -e "\e["31m...success" 
+        echo "$2 -e "\e[31m...success" 
     else
         echo "$2 ...failure" 
         exit 1
