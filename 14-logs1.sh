@@ -8,16 +8,16 @@ LOG_FILE="/tmp/${SCRIPT_NAME}-${TIME_STAMP}.log" # Define the log file path
 # Function to validate command execution
 VALIDATE() {
     if [ $1 -eq 0 ]; then
-        echo "$2 ...success" | tee -a "$LOG_FILE"
+        echo "$2 ...success" 
     else
-        echo "$2 ...failure" | tee -a "$LOG_FILE"
+        echo "$2 ...failure" 
         exit 1
     fi
 }
 
 # Ensure the script is run as root
 if [ $ID -ne 0 ]; then
-    echo "You must run this script as root or using sudo." | tee -a "$LOG_FILE"
+    echo "You must run this script as root or using sudo." 
     exit 1
 fi
 
