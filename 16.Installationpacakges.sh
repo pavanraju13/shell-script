@@ -17,4 +17,10 @@ else
 
 fi
 
-echo "all packages : $@"
+for i in $@
+
+do
+
+echo "package install : $1"
+
+done
