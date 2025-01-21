@@ -8,16 +8,16 @@ LOG_FILE="/tmp/${SCRIPT_NAME}-${TIME_STAMP}.log" # Define the log file path
 # Function to validate command execution
 VALIDATE() {
     if [ $1 -eq 0 ]; then
-        echo "$2 | echo -e "\e[31m...success" 
+        echo -e "$2 \e[32m...success\e[0m" | tee -a "$LOG_FILE" # Green for success
     else
-        echo "$2 ...failure" 
+        echo -e "$2 \e[31m...failure\e[0m" | tee -a "$LOG_FILE" # Red for failure
         exit 1
     fi
 }
 
 # Ensure the script is run as root
 if [ $ID -ne 0 ]; then
-    echo "You must run this script as root or using sudo." 
+    echo "You must run this script as root or using sudo." | tee -a "$LOG_FILE"
     exit 1
 fi
 
@@ -28,3 +28,4 @@ VALIDATE $? "Install MySQL"
 # Install Git and validate
 dnf install git -y &>>"$LOG_FILE"
 VALIDATE $? "Install Git"
+
