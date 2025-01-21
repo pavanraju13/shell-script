@@ -43,3 +43,7 @@ for i in "$@"; do
         
         fi
         done
+
+          dnf install $i -y &>>$LOG_FILE
+    VALIDATE $? " Install package $i"
+    
