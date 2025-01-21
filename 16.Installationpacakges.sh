@@ -16,6 +16,6 @@ for i in $@
 
 do
 
-echo "package install : $1"
+echo "package install : $i"
 
 done
