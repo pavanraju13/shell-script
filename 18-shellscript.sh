@@ -1,9 +1,9 @@
 #!/bin/bash
 
-Content=$Contentaftercode
+Content="Contentaftercode"
 
 echo "display the before content : $Content"
-
-./<17-otherscript.sh>.sh
+echo " display the variables count : $#"
+./17-otherscript.sh
 
 echo "display the after content : $content"
