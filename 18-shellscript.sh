@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set CPU usage threshold (in percentage)
-THRESHOLD= 216947
+THRESHOLD=216947
 
 # Get the current CPU usage (User + System)
 MEM_LOAD=$(free -m | awk '/^Mem:/ {print $7}')
