@@ -1,4 +1,5 @@
 #!/bin/bash
 
-echo "please provide output of the content "
+COURSE="Devops after the code"
 
+echo "calling the other script : $COURSE "
