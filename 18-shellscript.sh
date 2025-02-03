@@ -1,25 +1,25 @@
 #!/bin/bash
 
 # Set CPU usage threshold (in percentage)
-THRESHOLD=80
+THRESHOLD= 216947
 
 # Get the current CPU usage (User + System)
-CPU_LOAD=$(top -bn1 | grep "Cpu(s)" | awk '{print $2 + $4}')
+MEM_LOAD=$(free -m | awk '/^Mem:/ {print $7}')
 
 # Convert float to integer for comparison
-CPU_INT=${CPU_LOAD%.*}
+MEM_INT=${MEM_LOAD%.*}
 
 # Define recipient email
 EMAIL="admin@example.com"
 
 # Check if CPU usage exceeds the threshold
-if [ "$CPU_INT" -gt "$THRESHOLD" ]; then
-    MESSAGE="ALERT: High CPU usage detected! Current usage: ${CPU_INT}%"
+if [ "$MEM_INT" -gt "$THRESHOLD" ]; then
+    MESSAGE="ALERT: High memory usage detected! Current usage: ${MEM_INT}%"
     echo "$MESSAGE"
     
     # Send an email alert
     echo "$MESSAGE" | mail -s "CPU Usage Alert on $(hostname)" "$EMAIL"
 else
-    echo "CPU usage is normal: ${CPU_INT}%"
+    echo "CPU usage is normal: ${MEM_INT}%"
 fi
 
