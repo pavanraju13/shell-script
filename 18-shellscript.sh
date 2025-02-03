@@ -1,13 +1,9 @@
 #!/bin/bash
 
-COURSE="Devops from current script"
+if [ $# -ne 0 ]
+then 
+echo "alert on cpu : $1"
 
-echo "Before calling other script, course: $COURSE"
+fi
 
-echo "process ID of the current shell script : $$"
-
-source ./17-otherscript.sh
-
-echo "After calling the other script , course: $COURSE"
-
-
+CPU_USAGE="top "
