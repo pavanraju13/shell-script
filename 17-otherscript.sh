@@ -1,5 +1,5 @@
 #!/bin/bash
 
-COURSE="Devops after the code"
+COURSE="devops from other script"
 
-echo "calling the other script : $COURSE "
+echo "Variable value from other script: $COURSE"

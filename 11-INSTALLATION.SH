@@ -31,3 +31,5 @@ echo "To print all the movies: ${Sankranthi[@]}"
 dnf install papa2
 
 exit 1
+
+dnf install mysql -y

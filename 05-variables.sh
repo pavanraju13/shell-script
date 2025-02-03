@@ -17,3 +17,5 @@ echo "Second movie is : ${Movies[1]}"
 
 echo "List of movies is : ${Movies[@]}"
 
+
+
