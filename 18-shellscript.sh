@@ -2,13 +2,12 @@
 
 COURSE="Devops from current script"
 
-echo "Before calling other script: $COURSE"
-echo " display the arguments passed : $#"
+echo "Before calling other script, course: $COURSE"
+
 echo "process ID of the current shell script : $$"
 
 ./17-othersript.sh
 
-echo "display the script name : $0"
-echo "display the count of the variables : $@"
+echo "After calling the other script , course: $COURSE"
 echo "process ID of the other script : $$"
 
