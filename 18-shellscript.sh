@@ -1,9 +1,12 @@
 #!/bin/bash
 
-if [ $# -ne 0 ]
+top
+
+if [ $? -eq 0 ]
 then 
 echo "alert on cpu : $1"
-
+else
+echo "under utilization : $2"
 fi
 
-CPU_USAGE="top "
+
