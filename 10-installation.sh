@@ -10,7 +10,7 @@
 USERID=$(id -u)
 
 failure (){
-  echo -e "Error occured at line no :"/e[$31m]  $1 , error command :$2"
+  echo -e "Error occured at line no :"/e[$31m..  $1 , error command :$2"
 }
 
 trap 'failure ${LINENO} "$BASH_COMMAND"' ERR
