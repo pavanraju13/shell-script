@@ -9,7 +9,11 @@
 
 USERID=$(id -u)
 
-set -e
+failure (){
+  echo "failed at $1: $2"
+}
+
+trap 'failure ${LINE_NO} "BASH_COMMAND"' ERR
 
 if [ $USERID -eq 0 ]; then
   # Run the command if the user is root
