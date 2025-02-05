@@ -13,7 +13,7 @@ failure (){
   echo -e "\e[31mError occurred at line no: $1, error command: $2\e[0m"
 }
 
-
+trap 'failure ${LINENO} "$BASH_COMMAND" 'ERR
 if [ $USERID -eq 0 ]; then
   # Run the command if the user is root
   echo "Installing MySQL..."
