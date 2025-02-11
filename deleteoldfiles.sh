@@ -17,11 +17,6 @@ echo "$R Please make sure to create $SOURCE_DIRECTORY diectory $N"
 fi
 
 FILES=( find $SOURCE_DIRECTORY -type f -name "*.log" -mtime +14 )
-if [ $? -eq 0 ]
-then 
-echo "delete the files"
-rm $FILES
-else
-echo "no files to delete" 
-fi
+
+echo "files to delete : $FILES"
 
