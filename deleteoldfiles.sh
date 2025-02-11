@@ -13,14 +13,14 @@ if [ -d $SOURCE_DIRECTORY ]
 then
 echo -e "${G} source directory already exists ${N}"
 else
-echo "$R Please make sure to create $SOURCE_DIRECTORY diectory $N"
+echo -e "$R Please make sure to create $SOURCE_DIRECTORY diectory $N"
 fi
 
-FILES=$( find $SOURCE_DIRECTORY -name "*.log" -mtime +14 )
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14 )
 
 while IFS= read -r line
 do
-   echo "deleting files : $line"
+   echo "deleting files :$line"
    rm -rf $line
 done <<< $FILES
 
