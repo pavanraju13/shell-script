@@ -2,6 +2,8 @@
 
 SOURCE_DIRECTORY=/tmp/app-logs
 
+set -e
+
 # Define colors
 G="\e[32m" # Green for success
 R="\e[31m" # Red for failure
