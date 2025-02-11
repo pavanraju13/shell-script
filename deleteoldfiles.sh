@@ -13,5 +13,5 @@ if [ -d $SOURCE_DIRECTORY ]
 then
 echo -e "${G} source directory already exists ${N}"
 else
-echo "$R Please make sure to create diectory $N"
+echo "$R Please make sure to create $SOURCE_DIRECTORY diectory $N"
 fi
