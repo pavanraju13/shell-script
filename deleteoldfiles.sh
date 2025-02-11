@@ -11,7 +11,7 @@ N="\e[0m"  # Reset to default
 
 if [ -d $SOURCE_DIRECTORY ]
 then
-echo ${G} "source directory already exists ${N}"
+echo -e "${G} source directory already exists ${N}"
 else
 echo "$R Please make sure to create diectory $N"
 fi
