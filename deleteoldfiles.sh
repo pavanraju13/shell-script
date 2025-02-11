@@ -16,7 +16,7 @@ else
 echo "$R Please make sure to create $SOURCE_DIRECTORY diectory $N"
 fi
 
-FILES=( find $SOURCE_DIRECTORY -type f -name "*.log" -mtime +14 )
+FILES=$( find $SOURCE_DIRECTORY -type f -name "*.log" -mtime +14 )
 
 echo "files to delete : $FILES"
 
