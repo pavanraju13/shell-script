@@ -16,11 +16,8 @@ else
 echo -e "$R Please make sure to create $SOURCE_DIRECTORY diectory $N"
 fi
 
-FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14 )
-
-while IFS= read -r line
+find "$SOURCE_DIRECTORY" -name "*.log" -mtime +14 | while IFS= read -r line
 do
-   echo "deleting files :$line"
-   rm -rf $line
-done <<< $FILES
-
+   echo "Deleting file: $line"
+   rm -rf "$line"
+done
